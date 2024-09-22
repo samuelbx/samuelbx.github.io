@@ -86,3 +86,7 @@ ul {
 .item p {
     margin-top: 0
 }
+
+.lang-link {
+    font-size: 0.75em;
+}
