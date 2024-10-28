@@ -33,7 +33,8 @@ a {
 
 a:hover {
     color: #000;
-    border-bottom: none
+    border-bottom: none;
+    background-color: #ffffcc
 }
 
 img {
