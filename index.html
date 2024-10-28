@@ -7,7 +7,6 @@
     <link rel="icon" href="data:,">
     <link rel="stylesheet" href="main.css">
     <script src="tooltip.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   </head>
   <body>
     <div class="container">
@@ -85,14 +84,7 @@
               <a href="#" class="toggle-tooltip">[+]</a>
             </p>
             <div class="tooltip-content collapsed">
-              <p>We studied the <i>dynamics</i> of two rival species, and observed that the cross-diffusion term in the <a href="https://pubmed.ncbi.nlm.nih.gov/513804/" target="_blank">SKT</a> model induced <i>spatial segregation</i> at equilibrium:
-                \[
-                \begin{cases} 
-                \partial_{t}u - \Delta\left(d_{1}u + d_{11}u^{2} + d_{12}uv\right) & = u\left(r_{1} - a_{1}u - b_{1}v\right) \\ 
-                \partial_{t}v - \Delta\left(d_{2}v + d_{21}uv + d_{22}v^{2}\right) & = v\left(r_{2} - b_{2}u - a_{2}v\right) 
-                \end{cases}
-                \]
-                where \( u \) and \( v \) are the species' concentrations. To this end, we developed a fast solver of the underlying <i>non-linear differential equations</i>. We then showed that this continuous model was the limit of a <i>Markovian random process</i>, which we also simulated. <a href="https://github.com/samuelbx/pyspecies" target="_blank">[repo]</a> <a href="https://pypi.org/project/PySpecies/" target="_blank">[pypi]</a>
+              <p>We studied the <i>dynamics</i> of two rival species, and observed that the cross-diffusion term in the <a href="https://pubmed.ncbi.nlm.nih.gov/513804/" target="_blank">SKT</a> model induced <i>spatial segregation</i> at equilibrium. To this end, we developed a fast solver of the underlying <i>non-linear differential equations</i>. We then showed that this continuous model was the limit of a <i>Markovian random process</i>, which we also simulated. <a href="https://github.com/samuelbx/pyspecies" target="_blank">[repo]</a> <a href="https://pypi.org/project/PySpecies/" target="_blank">[pypi]</a>
               </p>
               <div style="text-align: center;"><img src="fig/skt.gif" alt="Population Dynamics Diagram" style="width: 80%; height: auto;"></div>
             </div>
