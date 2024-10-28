@@ -1,0 +1,136 @@
+body {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.75rem;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4
+}
+
+@media (max-width:30em) {
+    body {
+        font-size: 14px;
+        line-height: 1.5rem
+    }
+
+    body h1 {
+        font-size: 1.5rem
+    }
+}
+
+hr {
+    border-color: #fff
+}
+
+h4 {
+    display: flex;
+    justify-content: space-between
+}
+
+a {
+    text-decoration: underline;
+    color: #000
+}
+
+a:hover {
+    color: #000;
+    border-bottom: none
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1)
+}
+
+.content-container {
+    margin-bottom: 4rem
+}
+
+@media (max-width:800px) {
+    .container {
+        width: 90vw
+    }
+}
+
+.header {
+    padding: .5rem 0;
+    margin-bottom: 0;
+    display: block;
+    text-align: center
+}
+
+.header-title {
+    font-size: 2rem;
+    text-decoration: none
+}
+
+ul {
+    padding-left: 1em
+}
+
+.item h2,
+.item h4 {
+    margin-bottom: 0px
+}
+
+.item p {
+    margin: 0;
+    line-height: 2;
+}
+
+.item {
+    margin-bottom: 1em
+}
+
+.toggle-tooltip {
+    color: blue;
+}
+
+.tooltip-content {
+    overflow: hidden;
+    max-height: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-top: 10px;
+    opacity: 1;
+    padding: 15px;
+    transition: max-height 0.4s ease, opacity 0.4s ease, padding-top 0.4s ease, padding-bottom 0.4s ease, margin-top 0.4s ease;
+}
+
+.tooltip-content.collapsed {
+    max-height: 0;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    border: 1px solid #ddd;
+}
+
+.tooltip-content:not(.collapsed) {
+    max-height: 1000px;
+    opacity: 1;
+    padding: 15px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image-container img {
+    flex: 1;
+    max-width: 30%;
+    height: auto;
+}

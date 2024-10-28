@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Samuel Boïté</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="main.css">
+    <script src="tooltip.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="header-title">Samuel Boïté</h1>
+      </header>
+      <div class="content-container">
+        <section class="introduction">
+          <img src="pp.jpg" alt="Profile Picture" class="profile-pic" style="width: 150px; height: 150px; float: right; margin: 0 0 10px 10px;">
+          <p>Student at École polytechnique (X 2021) and ENS Paris-Saclay (MVA), I'm looking for an internship for spring 2025 leading to a PhD, and I'm open to teaching opportunities. Please do not hesitate to <a href="mailto:samuel.boite@polytechnique.edu">email me</a>!</p>
+        </section>
+        <hr>
+        <section class="education">
+          <h2>Education</h2>
+          <div class="item">
+            <h4><span>ENS Paris-Saclay, Master in Mathematics, Vision and Learning (MVA)</span> <span>2024-2025</span></h4>
+            <p>Image Processing, Optimal Transport, Generative Models and Natural Language Processing.</p>
+          </div>
+          <div class="item">
+            <h4><span>École polytechnique, Engineer in Applied Mathematics</span> <span>2021-2024</span></h4>
+            <p>Optimization, Machine Learning, Stochastic Models and Algorithms.</p>
+          </div>
+          <div class="item-last">
+            <h4><span>Lycée Louis-le-Grand, Classes préparatoires (MPSI-MP*)</span> <span>2019-2021</span></h4>
+          </div>
+        </section>
+        <hr>
+        <section class="research">
+          <h2>Research</h2>
+          <div class="item">
+            <h4><span>Centro de Modelamiento Matemático (CMM), <i>Research Intern</i></span> <span>Mar-Jul 2024</span></h4>
+            <p>Online algorithms for combinatorial auctions, with J. Correa and A. Cristi.
+              <a href="#" class="toggle-tooltip">[+]</a>
+            </p>
+            <div class="tooltip-content collapsed">
+              <p>In online combinatorial auctions, <i>m</i> objects are assignable to <i>n</i> agents who arrive sequentially, in adversarial order. Each agent has a valuation for each possible bundle of objects. The aim is to distribute these objects on the fly to maximize global welfare. What fraction of the offline optimum can be guaranteed, e.g. assuming that the valuations are subadditive? I got partial results on this hard open problem for a low number of items and in the simplified context of <i>max-min greedy matching</i>. <a href="fig/cmm-defence.pdf" target="_blank">[defence slides]</a></p>
+              <img src="fig/combauc.jpeg" alt="Combinatorial auctions" style="width: 100%; height: auto">
+            </div>
+          </div>
+          <div class="item">
+            <h4><span>Inria Saclay/CMAP, <i>Research Assistant</i></span> <span>2023-2024</span></h4>
+            <p>
+              Built <a href="https://github.com/samuelbx/tropical-svm" target="_blank">tropical support vector machines</a> with 
+              <a href="http://www.cmap.polytechnique.fr/~allamigeon/" target="_blank">X. Allamigeon</a>, 
+              <a href="http://www.cmap.polytechnique.fr/~gaubert/" target="_blank">S. Gaubert</a>, and 
+              <a href="https://fr.linkedin.com/in/th%C3%A9o-molfessis-458baa109" target="_blank">T. Molfessis</a>.
+              <a href="#" class="toggle-tooltip">[+]</a>
+            </p>
+            <div class="tooltip-content collapsed">
+              <p>We developed max-margin SVMs with efficient training and inference, based on tropical geometry and mean payoff games, with theoretical guarantees for margin optimality, all-vs-all multi-class classification, and the ability to perform general piecewise linear classification. <a href="https://github.com/samuelbx/tropical-svm" target="_blank">[repo]</a></p>
+              <div class="image-container">
+                <img src="fig/tropical1.svg" alt="Multi-class classification" style="width: 100%; height: auto;">
+                <img src="fig/tropical2.svg" alt="Max-margin tropical hyperplane" style="width: 100%; height: auto;">
+                <img src="fig/tropical3.svg" alt="Piecewise general classification" style="width: 100%; height: auto;">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h4><span>Exotec, <i>Software Intern</i></span> <span>Jun-Aug 2023</span></h4>
+            <p>Doubled the speed of 6,000+ warehouse robots by developing a new autopilot.
+              <a href="#" class="toggle-tooltip">[+]</a>
+            </p>
+            <div class="tooltip-content collapsed">
+              <p>I designed, tested and deployed a blazing-fast C++ <a href="https://en.wikipedia.org/wiki/Model_predictive_control" target="_blank">model predictive controller (MPC)</a> for the <a href="https://www.youtube.com/watch?v=-uJnSh0TZh0" target="_blank">Skypod® robot</a>, enabling it to intelligently <i>anticipate</i> its trajectories and <i>learn</i> about its environment's imperfections. Using its <i>physical model</i>, the robot is now able to calculate where a series of commands will take it, and <i>choose</i> the best possible trajectory in the long run. Thanks to my controller, we were able to <i>safely double the robots' maximum speed</i>, enabling them to carry out <i>far more orders</i> for hundreds of customers in industry, healthcare, retail...</p>
+              <div style="text-align: center;"><img src="fig/skypod.jpg" alt="Skypod® robot" style="width: 50%; height: auto"></div>
+            </div>
+          </div>
+          <div class="item">
+            <h4><span>CMAP, <i>Research Project</i></span> <span>2022-2023</span></h4>
+            <p>
+              <a href="https://github.com/samuelbx/pyspecies" target="_blank">Simulated population dynamics</a> with 
+              <a href="http://www.cmap.polytechnique.fr/~bansaye/" target="_blank">V. Bansaye</a>, 
+              <a href="https://sites.google.com/site/maximebreden/" target="_blank">M. Breden</a> and 
+              <a href="https://mathias-grau.github.io" target="_blank">M. Grau</a>.
+              <a href="#" class="toggle-tooltip">[+]</a>
+            </p>
+            <div class="tooltip-content collapsed">
+              <p>We studied the <i>dynamics</i> of two rival species, and observed that the cross-diffusion term in the <a href="https://pubmed.ncbi.nlm.nih.gov/513804/" target="_blank">SKT</a> model induced <i>spatial segregation</i> at equilibrium:
+                \[
+                \begin{cases} 
+                \partial_{t}u - \Delta\left(d_{1}u + d_{11}u^{2} + d_{12}uv\right) & = u\left(r_{1} - a_{1}u - b_{1}v\right) \\ 
+                \partial_{t}v - \Delta\left(d_{2}v + d_{21}uv + d_{22}v^{2}\right) & = v\left(r_{2} - b_{2}u - a_{2}v\right) 
+                \end{cases}
+                \]
+                where \( u \) and \( v \) are the species' concentrations. To this end, we developed a fast solver of the underlying <i>non-linear differential equations</i>. We then showed that this continuous model was the limit of a <i>Markovian random process</i>, which we also simulated. <a href="https://github.com/samuelbx/pyspecies" target="_blank">[repo]</a> <a href="https://pypi.org/project/PySpecies/" target="_blank">[pypi]</a>
+              </p>
+              <div style="text-align: center;"><img src="fig/skt.gif" alt="Population Dynamics Diagram" style="width: 80%; height: auto;"></div>
+            </div>
+          </div>
+        </section>
+        <hr>
+        <section class="teaching">
+          <h2>Teaching</h2>
+          <ul>
+            <li>Oral examiner (<i>colleur</i>) in MP*4 and PSI* at Lycée Louis-le-Grand (2024-present).</li>
+            <li>Tutor at École polytechnique, <a href="https://synapses.polytechnique.fr/catalogue/2023-2024/ue/82/MAA307-convex-optimization-and-optimal-control" target="_blank">Convex Optimization and Optimal Control</a> (2023).</li>
+            <li>Mathematics tutor at Académie de Versailles (2023-2024).</li>
+            <li>Educator at Apprentis d'Auteuil (civic service, 2021-2022).</li>
+          </ul>
+        </section>
+        <hr>
+        <section class="skills">
+          <p><strong>Code:</strong> C++, Python, OCaml.</p>
+          <p><strong>Languages:</strong> French, English and Spanish (proficient), Arabic (intermediate).</p>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
