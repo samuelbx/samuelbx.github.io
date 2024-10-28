@@ -96,8 +96,7 @@ ul {
 .tooltip-content {
     overflow: hidden;
     max-height: 0;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     border-radius: 6px;
     margin-top: 10px;
     opacity: 1;
@@ -106,12 +105,10 @@ ul {
 }
 
 .tooltip-content.collapsed {
-    max-height: 0;
     opacity: 0;
     padding-top: 0;
     padding-bottom: 0;
     margin-top: 0;
-    border: 1px solid #ddd;
 }
 
 .tooltip-content:not(.collapsed) {
