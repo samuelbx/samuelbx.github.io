@@ -6,6 +6,20 @@ body {
     padding: 0;
 }
 
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+@media (max-width: 600px) {
+    .profile-pic {
+        width: 25%;
+        height: auto;
+    }
+}
+
 @media (max-width:30em) {
     body {
         font-size: 14px;
