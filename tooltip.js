@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (content !== tooltipContent) {
           content.style.maxHeight = null;
           content.classList.add("collapsed");
-          content.previousElementSibling.querySelector('.toggle-tooltip').textContent = "[+]";
+          content.closest('div.item').querySelector('.toggle-tooltip').textContent = "[+]";
         }
       });
 
@@ -19,10 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
         tooltipContent.classList.remove("collapsed");
         tooltipContent.style.maxHeight = tooltipContent.scrollHeight + "px";
         toggle.textContent = "[-]";
-        
-        if (window.MathJax) {
-          MathJax.typesetPromise([tooltipContent]);
-        }
       } else {
         tooltipContent.style.maxHeight = null;
         tooltipContent.classList.add("collapsed");

@@ -75,10 +75,8 @@ img {
 }
 
 .header {
-    padding: .5rem 0;
     margin-bottom: 0;
     display: block;
-    text-align: center
 }
 
 .header-title {
@@ -142,4 +140,8 @@ ul {
     flex: 1;
     max-width: 30%;
     height: auto;
+}
+
+.toggle-tooltip {
+    font-weight: normal;
 }
