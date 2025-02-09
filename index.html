@@ -4,7 +4,7 @@
     <title>Samuel Boïté</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <meta name="google-site-verification" content="ponqDvyN0-gzIju8UY-WHwkc2ZmcrGphGhF6jwDl850" />
+    <meta name="google-site-verification" content="ponqDvyN0-gzIju8UY-WHwkc2ZmcrGphGhF6jwDl850">
     <link rel="icon" href="data:,">
     <link rel="stylesheet" href="main.css">
     <script src="tooltip.js"></script>
@@ -15,83 +15,63 @@
         <h1 class="header-title">Samuel Boïté</h1>
       </header>
       <div class="content-container">
-        <section class="introduction">
-          <img src="pp.jpg" alt="Profile Picture" class="profile-pic">
-          <p>Currently in my final year at École polytechnique, I am enrolled in the <a href="https://www.master-mva.com/" target="_blank">MVA master's</a> at ENS Paris-Saclay, where I am specializing in image processing and optimal transport.</p>
-          <p>I'm also open to teaching opportunities: feel free to <a href="mailto:samuel.boite@polytechnique.edu">contact me</a>!</p>
+        <section>
+          <img src="pp.jpg" alt="Picture" class="profile-pic">
+          <p>I am an applied mathematics engineer from École polytechnique, based in Paris, now specializing in AI at the <a href="https://www.master-mva.com/" target="_blank">MVA</a> (ENS Paris-Saclay), with a focus on optimal transport, deep learning, and image processing.</p>
+          <p>I also enjoy teaching and am open to new opportunities—feel free to <a href="mailto:samuel.boite@polytechnique.edu">reach out</a>!</p>
         </section>
-        <br />
-        <section class="research">
+        <br>
+        <section>
           <h2>Research</h2>
           <div class="item">
-            <h4><span>Centro de Modelamiento Matemático (<a href="https://www.cmm.uchile.cl/" target="_blank">CMM</a>), Santiago <a href="#" class="toggle-tooltip">[+]</a></span> <span>Mar-Jul 2024</span></h4>
-            <p>Online algorithms for combinatorial auctions, with <a href="https://www.dii.uchile.cl/~jcorrea/" target="_blank">J. Correa</a> and <a href="https://sites.google.com/view/andres-cristi" target="_blank">A. Cristi</a>.</p>
-            <div class="tooltip-content collapsed">
-              <p>In online combinatorial auctions, <i>m</i> objects are assignable to <i>n</i> agents who arrive sequentially, in adversarial order. Each agent has a valuation for each possible bundle of objects. The aim is to distribute these objects on the fly to maximize global welfare. Are there prices guaranteeing 2/3 of the offline optimum? I got partial results on this hard open problem for a low number of items and in the simplified context of <i>max-min greedy matching</i>.</p>
-              <img src="fig/combauc.jpeg" alt="Combinatorial auctions" style="width: 100%; height: auto">
-            </div>
-          </div>
-          <div class="item">
-            <h4><span>Inria Saclay (<a href="https://team.inria.fr/tropical/fr/" target="_blank">Tropical</a> team) <a href="#" class="toggle-tooltip">[+]</a></span> <span>2023-2024</span></h4>
             <p>
-              Built <a href="https://github.com/samuelbx/tropical-svm" target="_blank">tropical support vector machines</a> with 
-              <a href="http://www.cmap.polytechnique.fr/~allamigeon/" target="_blank">X. Allamigeon</a>, 
-              <a href="http://www.cmap.polytechnique.fr/~gaubert/" target="_blank">S. Gaubert</a> and 
+              Last year, at the <strong>Centro de Modelamiento Matemático</strong>
+              <sup><img src="fig/cl.png" alt="Chile" width="12" height="8"></sup>
+              (<a href="https://www.cmm.uchile.cl/" target="_blank">CMM</a>),
+              I worked on <a href="#" class="modal-trigger" data-modal="#combauc">online algorithms for combinatorial auctions</a>
+              with <a href="https://www.dii.uchile.cl/~jcorrea/" target="_blank">J. Correa</a> and
+              <a href="https://sites.google.com/view/andres-cristi" target="_blank">A. Cristi</a>.
+
+              Before that, at <strong>Inria</strong>, I built
+              <a href="#" class="modal-trigger" data-modal="#tsvm">tropical support vector machines</a> with
+              <a href="http://www.cmap.polytechnique.fr/~allamigeon/" target="_blank">X. Allamigeon</a>,
+              <a href="http://www.cmap.polytechnique.fr/~gaubert/" target="_blank">S. Gaubert</a>, and
               <a href="https://fr.linkedin.com/in/th%C3%A9o-molfessis-458baa109" target="_blank">T. Molfessis</a>.
             </p>
-            <div class="tooltip-content collapsed">
-              <p>We developed max-margin SVMs with efficient training and inference, based on tropical geometry and mean payoff games, with theoretical guarantees for margin optimality, all-vs-all multi-class classification, and the ability to perform general piecewise linear classification. <a href="https://github.com/samuelbx/tropical-svm" target="_blank">[repo]</a></p>
-              <div class="image-container">
-                <img src="fig/tropical1.svg" alt="Multi-class classification" style="width: 100%; height: auto;">
-                <img src="fig/tropical2.svg" alt="Max-margin tropical hyperplane" style="width: 100%; height: auto;">
-                <img src="fig/tropical3.svg" alt="Piecewise general classification" style="width: 100%; height: auto;">
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <h4><span><a href="https://www.exotec.com/" target="_blank">Exotec</a>, Lille <a href="#" class="toggle-tooltip">[+]</a></span> <span>Jun-Aug 2023</span></h4>
-            <p>Doubled the speed of 6,000+ warehouse robots by developing a new autopilot.</p>
-            <div class="tooltip-content collapsed">
-              <p>I designed, tested and deployed an efficient C++ <a href="https://en.wikipedia.org/wiki/Model_predictive_control" target="_blank">model predictive controller (MPC)</a> for the <a href="https://www.youtube.com/watch?v=-uJnSh0TZh0" target="_blank">Skypod robot</a>, enabling it to intelligently anticipate its trajectories and learn about its environment's imperfections. Using its physical model, the robot is now able to calculate where a series of commands will take it, and choose the optimal trajectory in the long run. Thanks to my controller, we were able to safely double the robots' maximum speed, enabling them to carry out far more orders for hundreds of customers in industry, healthcare, retail...</p>
-              <div style="text-align: center;"><img src="fig/skypod.jpg" alt="Skypod® robot" style="width: 50%; height: auto"></div>
-            </div>
-          </div>
-          <div class="item">
-            <h4><span>Centre de Mathématiques Appliquées (<a href="https://cmap.ip-paris.fr/" target="_blank">CMAP</a>), Palaiseau <a href="#" class="toggle-tooltip">[+]</a></span> <span>2022-2023</span></h4>
             <p>
-              <a href="https://github.com/samuelbx/pyspecies" target="_blank">Simulated population dynamics</a> with 
-              <a href="http://www.cmap.polytechnique.fr/~bansaye/" target="_blank">V. Bansaye</a>, 
-              <a href="https://sites.google.com/site/maximebreden/" target="_blank">M. Breden</a>, 
-              <a href="https://mathias-grau.github.io" target="_blank">M. Grau</a> and
+              In 2023, at <strong>Exotec</strong>, I
+              <a href="#" class="modal-trigger" data-modal="#exotec">doubled the speed of thousands of warehouse robots</a>
+              by developing a new autopilot.
+              Before that, at the <strong>Centre de Mathématiques Appliquées</strong>
+              (<a href="https://cmap.ip-paris.fr/" target="_blank">CMAP</a>),
+              I <a href="#" class="modal-trigger" data-modal="#psc">simulated population dynamics</a>
+              with <a href="http://www.cmap.polytechnique.fr/~bansaye/" target="_blank">V. Bansaye</a>,
+              <a href="https://sites.google.com/site/maximebreden/" target="_blank">M. Breden</a>,
+              <a href="https://mathias-grau.github.io" target="_blank">M. Grau</a>, and
               <a href="https://www.linkedin.com/in/daniel-sbeiti" target="_blank">D. Sbeiti</a>.
             </p>
-            <div class="tooltip-content collapsed">
-            <p>We studied the dynamics of two rival species, and observed that the cross-diffusion term in the <a href="https://pubmed.ncbi.nlm.nih.gov/513804/" target="_blank">SKT</a> model induced spatial segregation at equilibrium. To this end, we developed a fast solver of the underlying non-linear differential equations. We then showed that this continuous model was the limit of a Markovian random process, which we also simulated. <a href="https://github.com/samuelbx/pyspecies" target="_blank">[repo]</a> <a href="https://pypi.org/project/PySpecies/" target="_blank">[pypi]</a>
-            </p>
-              <div style="text-align: center;"><video src="fig/skt.webm" style="width: 80%; height: auto;" autoplay loop muted playsinline></video></div>
-            </div>
           </div>
         </section>
-        <br />
-        <section class="teaching">
+        <br>
+        <section>
           <h2>Teaching</h2>
           <ul>
-            <li>Teacher in Statistics at Sciences Po Paris (L1, 2025).</li>
-            <li>Oral examiner (<i>colleur</i>) in MP* and PSI* at Lycée Louis-le-Grand (2024-2025).</li>
-            <li>Teaching assistant at École polytechnique, <a href="https://synapses.polytechnique.fr/catalogue/2023-2024/ue/82/MAA307-convex-optimization-and-optimal-control" target="_blank">Convex Optimization and Optimal Control</a> (L3, 2023).</li>
-            <li>Mathematics tutor at Académie de Versailles (T<sup>le</sup>, 2023-2024).</li>
-            <li>Educator at <a href="https://www.apprentis-auteuil.org/" target="_blank">Apprentis d'Auteuil</a> (collège-lycée, civic service, 2021-2022).</li>
+            <li>Sciences Po, Teacher in <i>Statistics for the social sciences</i> (2025-present)</li>
+            <li>Lycée Louis-le-Grand, Oral examiner in MP and PSI (2024-present).</li>
+            <li>École polytechnique, Teaching assistant in <i>Convex optimization</i> (2023-2024).</li>
+            <li>Académie de Versailles, Mathematics tutor (2023-2024)</li>
+            <li>Apprentis d'Auteuil, Educator (2021-2022)</li>
           </ul>
         </section>
-        <br />
-        <section class="education">
+        <br>
+        <section>
           <h2>Education</h2>
           <div class="item">
-            <h4><span>ENS Paris-Saclay, <a href="https://www.master-mva.com/" target="_blank">Master MVA</a> (Mathematics, Vision and Learning) <a href="#" class="toggle-tooltip">[+]</a></span> <span>2024-2025</span></h4>
+            <h4><span>ENS Paris-Saclay, <a href="https://www.master-mva.com/" target="_blank">Master MVA</a> <a href="#" class="toggle-tooltip">[+]</a></span> <span>2024-2025</span></h4>
             <div class="tooltip-content collapsed">
               <ul>
-                <li><b>2<sup>nd</sup> semester</b>: Large Random Matrices, Protein Science, Image Generation, Kernel Methods.</li>
-                <li><b>1<sup>st</sup> semester</b>: Optimal Transport, <a href="https://github.com/samuelbx/deep-style-transfer" target="_blank">Image Processing</a>, Time Series, <a href="https://github.com/samuelbx/graph-gen">Natural Language Processing</a>, Theory of Deep Learning.</li>
+                <li><b>2<sup>nd</sup> semester</b>: large random matrices, protein science, image generation, kernel methods, generative AI through transport and denoising.</li>
+                <li><b>1<sup>st</sup> semester</b>: computational optimal transport, <a href="#" class="modal-trigger" data-modal="#dst">image processing</a>, time series, <a href="#" class="modal-trigger" data-modal="#graph-gen">advanced learning for text and graph data</a>, theory of deep learning.</li>
               </ul>
             </div>
           </div>
@@ -99,18 +79,143 @@
             <h4><span>École polytechnique, Engineer in Applied Mathematics <a href="#" class="toggle-tooltip">[+]</a></span> <span>2021-2024</span></h4>
             <div class="tooltip-content collapsed">
               <ul>
-                <li><b>3<sup>rd</sup> year</b>: Operations Research, Machine Learning, Random Models for Biology, Uncertainty and Risk Analysis, <a href="https://github.com/samuelbx/mini-python-ocaml" target="_blank">Compilation</a>, Computer Architecture.</li>
-                <li><b>2<sup>nd</sup> year</b>: Statistical Learning, Optimization and Control, Variational Calculus, Stochastic Models, <a href="https://mathias-grau.github.io/projects/modal/" target="_blank">Rare Events</a>, Complex Analysis, Data Analysis, Algorithms, Business Economics.</li>
-                <li><b>1<sup>st</sup> year</b>: Common Core (Mathematics, Computer Science, Quantum Physics, Economics, Cognitive Science).</li>
-                <li>Swimming section, skydiving club (X-Para) and drill instructor for first-year students.</li>
+                <li><b>3<sup>rd</sup> year</b>: operations research, machine learning, random models for biology, uncertainty and risk analysis, <a href="#" class="modal-trigger" data-modal="#compilation">compilation</a>, computer architecture.</li>
+                <li><b>2<sup>nd</sup> year</b>: statistical learning, optimization and control, variational calculus, stochastic models, <a href="#" class="modal-trigger" data-modal="#rare-events">rare events</a>, complex analysis, data analysis, algorithms, business economics.</li>
+                <li><b>1<sup>st</sup> year</b>: common core (mathematics, computer science, quantum physics, economics, neuroscience).</li>
+                <li>Swimming, skydiving and drill instructor for first-year students.</li>
               </ul>
             </div>
           </div>
         </section>
-        <br />
-        <section class="skills">
+        <br>
+        <section>
+          <p><b>Software:</b> Contributor to the <i>Python Optimal Transport</i> (<a href="https://pythonot.github.io/" target="_blank">POT</a>) library.</p>
           <p><b>Languages:</b> French, English and Spanish (proficient), Arabic (intermediate, <a href="https://www.ifegypte.com/en/" target="_blank">DEAC</a> '24).</p>
+        </section>
       </div>
     </div>
+
+    <div class="modal-overlay"></div>
+    <div class="modal" id="combauc">
+      <div class="modal-header">
+        <h4>Online algorithms for combinatorial auctions</h4>
+        <div class="modal-close-container">
+          <a class="modal-close">[X]</a>
+        </div>
+      </div>
+      <p>
+        In online combinatorial auctions, <i>m</i> objects are assignable to <i>n</i> agents who arrive
+        sequentially, in adversarial order. Each agent has a valuation for each possible bundle of
+        objects. The aim is to distribute these objects on the fly to maximize global welfare. Are there
+        prices guaranteeing 2/3 of the offline optimum? I got partial results on this hard open problem
+        for a low number of items and in the simplified context of <i>max-min greedy matching</i>.
+      </p>
+      <img src="fig/combauc.jpeg" alt="Combinatorial auctions">
+    </div>
+    <div class="modal" id="tsvm">
+      <div class="modal-header">
+        <h4>Tropical support vector machines</h4>
+        <div class="modal-close-container">
+          <a class="modal-close">[X]</a>
+        </div>
+      </div>
+      <p>
+        We developed max-margin SVMs with efficient training and inference, based on tropical geometry
+        and mean payoff games, with theoretical guarantees for margin optimality, all-vs-all
+        multi-class classification, and the ability to perform general piecewise linear classification.
+        <a href="https://github.com/samuelbx/tropical-svm" target="_blank">[repo]</a>
+      </p>
+      <div class="image-container">
+        <img src="fig/tropical1.svg" alt="Multi-class classification">
+        <img src="fig/tropical2.svg" alt="Max-margin tropical hyperplane">
+        <img src="fig/tropical3.svg" alt="Piecewise general classification">
+      </div>
+    </div>
+    <div class="modal" id="exotec">
+      <div class="modal-header">
+        <h4>High-speed driving for robots</h4>
+        <div class="modal-close-container">
+          <a class="modal-close">[X]</a>
+        </div>
+      </div>
+      <p>
+        I designed, tested and deployed an efficient
+        <a href="https://en.wikipedia.org/wiki/Model_predictive_control" target="_blank">model predictive controller</a>
+        for the
+        <a href="https://www.exotec.com/system/automated-warehouse-robots/" target="_blank">Skypod robot</a>, enabling it to
+        intelligently anticipate its trajectories and learn about its environment's imperfections.
+        Using its physical model, the robot is now able to calculate where a series of commands will take it,
+        and choose the optimal trajectory in the long run. Thanks to my controller, we were able to safely
+        double the robots' maximum speed up to 4 m/s, enabling them to carry out far more orders for hundreds of
+        customers in industry, healthcare, retail...
+      </p>
+      <div style="text-align: center;">
+        <img src="fig/skypod.jpg" alt="Skypod® robot" style="width: 50%;">
+      </div>
+    </div>
+    <div class="modal" id="psc">
+      <div class="modal-header">
+        <h4>Simulating population dynamics</h4>
+        <div class="modal-close-container">
+          <a class="modal-close">[X]</a>
+        </div>
+      </div>
+      <p>
+        We studied the dynamics of two rival species, and observed that the cross-diffusion term
+        in the <a href="https://pubmed.ncbi.nlm.nih.gov/513804/" target="_blank">SKT</a> model induced
+        spatial segregation at equilibrium. To this end, we developed a fast solver of the underlying
+        non-linear differential equations. We then showed that this continuous model was the limit
+        of a Markovian random process, which we also simulated.
+        <a href="https://github.com/samuelbx/pyspecies" target="_blank">[repo]</a>
+        <a href="https://pypi.org/project/PySpecies/" target="_blank">[pypi]</a>
+      </p>
+      <div style="text-align: center;">
+        <video src="fig/skt.webm" style="width: 80%;" autoplay loop muted playsinline></video>
+      </div>
+    </div>
+
+    <div class="modal" id="dst">
+      <div class="modal-header">
+        <h4>Wasserstein style transfer</h4>
+        <div class="modal-close-container">
+          <a class="modal-close">[X]</a>
+        </div>
+      </div>
+      <p>Transfer the style of an image to a content image using VGG19 and optimal transport on the latent space. <a href="https://github.com/samuelbx/deep-style-transfer">[repo]</a></p>
+      <img src="fig/wasserstein-ot.jpeg" alt="Wasserstein style transfer">
+    </div>
+
+    <div class="modal" id="graph-gen">
+      <div class="modal-header">
+        <h4>Graph generation challenge</h4>
+        <div class="modal-close-container">
+          <a class="modal-close">[X]</a>
+        </div>
+      </div>
+      <p>Generate graphs conditioned on seven target features: number of nodes, edges, average degree, triangles, global clustering coefficient, maximum k-core, and Louvain communities. <a href="https://github.com/samuelbx/graph-gen">[repo]</a></p>
+      <img src="fig/altegrad.jpeg" alt="MLP architecture">
+      <p>Done with <a href="https://mathias-grau.github.io">Mathias Grau</a>. Among 60 teams, our approach ranked 1<sup>st</sup>. The given baseline was a VAE + diffusion model, which we improved a lot, but because of the abnormal proximity between training and test data, we found that the simplest models worked better.</p>
+    </div>
+
+    <div class="modal" id="compilation">
+      <div class="modal-header">
+        <h4>Mini-Python compiler</h4>
+        <div class="modal-close-container">
+          <a class="modal-close">[X]</a>
+        </div>
+      </div>
+      <p>With <a href="https://fr.linkedin.com/in/smail-el-hafdi-65744a253">Smaïl El Hafdi</a>, we developed a small compiler from a Python subset to x86 assembly. Final OCaml code is pretty messy for lack of time, but we've implemented type checking, AST simplification and all the linearization steps. <a href="https://github.com/samuelbx/mini-python-ocaml">[repo]</a></p>
+    </div>
+
+    <div class="modal" id="rare-events">
+      <div class="modal-header">
+        <h4>Simulating rare events in football</h4>
+        <div class="modal-close-container">
+          <a class="modal-close">[X]</a>
+        </div>
+      </div>
+      <p>Done with <a href="https://mathias-grau.github.io">Mathias Grau</a>. In the sports betting industry, bookmakers rely on extensive digital and statistical tools to evaluate the odds for each team’s victory. One striking example of a rare outcome in football history is Leicester City’s unexpected win in the 2015-2016 Premier League season, which defied all predictions. Inspired by this season, we developed a model to simulate rare events in a tournament setting, which we tested and analyzed against real data. <a href="https://mathias-grau.github.io/projects/modal/" target="_blank">[report]</a></p>
+    </div>
+
   </body>
 </html>
