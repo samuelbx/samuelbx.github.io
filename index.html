@@ -65,30 +65,6 @@
         </section>
         <br>
         <section>
-          <h2>Education</h2>
-          <div class="item">
-            <h4><span>ENS Paris-Saclay, <a href="https://www.master-mva.com/" target="_blank">Master MVA</a> <a href="#" class="toggle-tooltip">[+]</a></span> <span>2024-2025</span></h4>
-            <div class="tooltip-content collapsed">
-              <ul>
-                <li><b>2<sup>nd</sup> semester</b>: large random matrices, protein science, image generation, kernel methods, generative AI through transport and denoising.</li>
-                <li><b>1<sup>st</sup> semester</b>: computational optimal transport, <a href="#" class="modal-trigger" data-modal="#dst">image processing</a>, time series, <a href="#" class="modal-trigger" data-modal="#graph-gen">advanced learning for text and graph data</a>, theory of deep learning.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="item">
-            <h4><span>École polytechnique, Engineer in Applied Mathematics <a href="#" class="toggle-tooltip">[+]</a></span> <span>2021-2024</span></h4>
-            <div class="tooltip-content collapsed">
-              <ul>
-                <li><b>3<sup>rd</sup> year</b>: operations research, machine learning, random models for biology, uncertainty and risk analysis, <a href="#" class="modal-trigger" data-modal="#compilation">compilation</a>, computer architecture.</li>
-                <li><b>2<sup>nd</sup> year</b>: statistical learning, optimization and control, variational calculus, stochastic models, <a href="#" class="modal-trigger" data-modal="#rare-events">rare events</a>, complex analysis, data analysis, algorithms, business economics.</li>
-                <li><b>1<sup>st</sup> year</b>: common core (mathematics, computer science, quantum physics, economics, neuroscience).</li>
-                <li>Swimming, skydiving and drill instructor for first-year students.</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <br>
-        <section>
           <p><b>Software:</b> Contributor to the <i>Python Optimal Transport</i> (<a href="https://pythonot.github.io/" target="_blank">POT</a>) library.</p>
           <p><b>Languages:</b> French, English and Spanish (proficient), Arabic (intermediate, <a href="https://www.ifegypte.com/en/" target="_blank">DEAC</a> '24).</p>
         </section>
@@ -172,49 +148,6 @@
       <div style="text-align: center;">
         <video src="fig/skt.webm" style="width: 80%;" autoplay loop muted playsinline></video>
       </div>
-    </div>
-
-    <div class="modal" id="dst">
-      <div class="modal-header">
-        <h4>Wasserstein style transfer</h4>
-        <div class="modal-close-container">
-          <a class="modal-close">[X]</a>
-        </div>
-      </div>
-      <p>Transfer the style of an image to a content image using VGG19 and optimal transport on the latent space. <a href="https://github.com/samuelbx/deep-style-transfer">[repo]</a></p>
-      <img src="fig/wasserstein-ot.jpeg" alt="Wasserstein style transfer">
-    </div>
-
-    <div class="modal" id="graph-gen">
-      <div class="modal-header">
-        <h4>Graph generation challenge</h4>
-        <div class="modal-close-container">
-          <a class="modal-close">[X]</a>
-        </div>
-      </div>
-      <p>Generate graphs conditioned on seven target features: number of nodes, edges, average degree, triangles, global clustering coefficient, maximum k-core, and Louvain communities. <a href="https://github.com/samuelbx/graph-gen">[repo]</a></p>
-      <img src="fig/altegrad.jpeg" alt="MLP architecture">
-      <p>Done with <a href="https://mathias-grau.github.io">Mathias Grau</a>. Among 60 teams, our approach ranked 1<sup>st</sup>. The given baseline was a VAE + diffusion model, which we improved a lot, but because of the abnormal proximity between training and test data, we found that the simplest models worked better.</p>
-    </div>
-
-    <div class="modal" id="compilation">
-      <div class="modal-header">
-        <h4>Mini-Python compiler</h4>
-        <div class="modal-close-container">
-          <a class="modal-close">[X]</a>
-        </div>
-      </div>
-      <p>With <a href="https://fr.linkedin.com/in/smail-el-hafdi-65744a253">Smaïl El Hafdi</a>, we developed a small compiler from a Python subset to x86 assembly. Final OCaml code is pretty messy for lack of time, but we've implemented type checking, AST simplification and all the linearization steps. <a href="https://github.com/samuelbx/mini-python-ocaml">[repo]</a></p>
-    </div>
-
-    <div class="modal" id="rare-events">
-      <div class="modal-header">
-        <h4>Simulating rare events in football</h4>
-        <div class="modal-close-container">
-          <a class="modal-close">[X]</a>
-        </div>
-      </div>
-      <p>Done with <a href="https://mathias-grau.github.io">Mathias Grau</a>. In the sports betting industry, bookmakers rely on extensive digital and statistical tools to evaluate the odds for each team’s victory. One striking example of a rare outcome in football history is Leicester City’s unexpected win in the 2015-2016 Premier League season, which defied all predictions. Inspired by this season, we developed a model to simulate rare events in a tournament setting, which we tested and analyzed against real data. <a href="https://mathias-grau.github.io/projects/modal/" target="_blank">[report]</a></p>
     </div>
 
   </body>
