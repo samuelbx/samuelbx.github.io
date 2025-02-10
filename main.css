@@ -223,14 +223,6 @@ body.modal-open {
     object-fit: cover;
 }
 
-.chile-flag {
-    width: 12px;
-    height: 8px;
-    background-image: url('fig/cl.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
 /* --- MEDIA QUERIES --- */
 
 @media (max-width: 800px) {
