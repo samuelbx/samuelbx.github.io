@@ -7,139 +7,76 @@
     <meta name="google-site-verification" content="ponqDvyN0-gzIju8UY-WHwkc2ZmcrGphGhF6jwDl850">
     <link rel="icon" href="data:,">
     <link rel="stylesheet" href="main.css">
-    <script src="tooltip.js"></script>
   </head>
   <body>
     <div class="container">
-      <header class="header">
-        <h1 class="header-title">Samuel Boïté</h1>
+      <header>
+        <h1>Samuel Boïté</h1>
       </header>
-      <div class="content-container">
-        <section>
+      <div class="content">
+        <section class="intro">
           <div class="profile-pic"></div>
-          <p>I am an applied mathematics engineer from École polytechnique, based in Paris, now specializing in AI at the <a href="https://www.master-mva.com/" target="_blank">MVA</a> (ENS Paris-Saclay), with a focus on optimal transport, deep learning, and image processing.</p>
-          <p>I also enjoy teaching and am open to new opportunities—feel free to <a href="mailto:samuel.boite@polytechnique.edu">reach out</a>!</p>
+          <p>Applied mathematics engineer from École polytechnique and MVA, interested in optimal transport, generative models, and tropical methods.</p>
+          <p>I also enjoy teaching and am currently seeking new opportunities.</p>
+          <p>Feel free to reach out at <a href="mailto:samuel.boite@polytechnique.edu">samuel.boite@polytechnique.edu</a>!</p>
         </section>
-        <br>
-        <section>
+        
+        <section class="research">
           <h2>Research</h2>
-          <div class="item">
-            <p>
-              Last year, at the <strong>Centro de Modelamiento Matemático</strong>
-              (<a href="https://www.cmm.uchile.cl/" target="_blank">CMM</a>),
-              I worked on <a href="#" class="modal-trigger" data-modal="#combauc">online algorithms for combinatorial auctions</a>
-              with <a href="https://www.dii.uchile.cl/~jcorrea/" target="_blank">J. Correa</a> and
-              <a href="https://sites.google.com/view/andres-cristi" target="_blank">A. Cristi</a>.
-
-              Before that, at <strong>Inria</strong>, I built
-              <a href="#" class="modal-trigger" data-modal="#tsvm">tropical support vector machines</a> with
-              <a href="http://www.cmap.polytechnique.fr/~allamigeon/" target="_blank">X. Allamigeon</a>,
-              <a href="http://www.cmap.polytechnique.fr/~gaubert/" target="_blank">S. Gaubert</a>, and
-              <a href="https://fr.linkedin.com/in/th%C3%A9o-molfessis-458baa109" target="_blank">T. Molfessis</a>.
-            </p>
-            <p>
-              In 2023, at <strong>Exotec</strong>, I
-              <a href="#" class="modal-trigger" data-modal="#exotec">doubled the speed of thousands of warehouse robots</a>
-              by developing a new autopilot.
-              Before that, at the <strong>Centre de Mathématiques Appliquées</strong>
-              (<a href="https://cmap.ip-paris.fr/" target="_blank">CMAP</a>),
-              I <a href="#" class="modal-trigger" data-modal="#psc">simulated population dynamics</a>
-              with <a href="http://www.cmap.polytechnique.fr/~bansaye/" target="_blank">V. Bansaye</a> and
-              <a href="https://sites.google.com/site/maximebreden/" target="_blank">M. Breden</a>.
-            </p>
-            <p>I contribute to the <i>Python Optimal Transport</i> (<a href="https://pythonot.github.io/" target="_blank">POT</a>) library.</p>
-          </div>
+          <p>
+            I am currently at <strong>Université Paris Cité</strong>
+            (<a href="https://map5.mi.parisdescartes.fr/" target="_blank">MAP5</a>),
+            working with <a href="https://judelo.github.io/" target="_blank">Julie Delon</a>
+            and <a href="https://eloitanguy.github.io/" target="_blank">Eloi Tanguy</a>
+            on optimal transport between Gaussian mixtures.
+          </p>
+          <p>
+            At <strong>Inria</strong>, I developed efficient algorithms for
+            <strong>tropical support vector machines</strong> with
+            <a href="http://www.cmap.polytechnique.fr/~allamigeon/" target="_blank">Xavier Allamigeon</a>,
+            <a href="http://www.cmap.polytechnique.fr/~gaubert/" target="_blank">Stéphane Gaubert</a>, and
+            <a href="https://fr.linkedin.com/in/th%C3%A9o-molfessis-458baa109" target="_blank">Théo Molfessis</a>.
+          </p>
+          <figure>
+            <div class="gallery">
+              <div class="gallery-item">
+                <div class="tsvm-image tsvm-moons" aria-label="Tropical SVM moons dataset"></div>
+              </div>
+              <div class="gallery-item">
+                <div class="tsvm-image tsvm-blobs" aria-label="Tropical SVM blobs dataset"></div>
+              </div>
+            </div>
+            <figcaption>
+              Tropical SVMs have piecewise-linear decision boundaries that naturally divide space into multiple sectors, 
+              enabling interpretable multi-class classification.
+            </figcaption>
+          </figure>
+          <p>
+            Last year, at the <strong>Centro de Modelamiento Matemático</strong>
+            (<a href="https://www.cmm.uchile.cl/" target="_blank">CMM</a>),
+            I investigated online algorithms for combinatorial auctions
+            with <a href="https://www.dii.uchile.cl/~jcorrea/" target="_blank">José Correa</a> and
+            <a href="https://sites.google.com/view/andres-cristi" target="_blank">Andrés Cristi</a>.
+            In 2023, at <strong>Exotec</strong>, I designed control systems that
+            doubled robot speeds.
+          </p>
+          <p>I contribute to the <i>Python Optimal Transport</i> (<a href="https://pythonot.github.io/" target="_blank">POT</a>) library.</p>
         </section>
-        <br>
-        <section>
+        
+        <section class="teaching">
           <h2>Teaching</h2>
           <ul>
-            <li>Sciences Po, Teacher in <i>Statistics for the social sciences</i> (2025-present)</li>
+            <li>Sciences Po, Teacher in Statistics for social sciences (2025-present)</li>
             <li>Lycée Louis-le-Grand, Oral examiner in MP and PSI (2024-present)</li>
-            <li>École polytechnique, Teaching assistant in <i>Convex optimization</i> (2023-2024)</li>
+            <li>École polytechnique, Tutor in Convex optimization (2023-2024)</li>
             <li>Académie de Versailles, Mathematics tutor (2023-2024)</li>
             <li>Apprentis d'Auteuil, Educator (2021-2022)</li>
           </ul>
         </section>
-        <br>
-        <i><small>Friend pages: <a href="https://tessbreton.github.io/" target="_blank">Tess Breton</a>, <a href="https://boscodaligny.fr/" target="_blank">Bosco d'Aligny</a>, <a href="https://mathias-grau.github.io" target="_blank">Mathias Grau</a>, <a href="">Daniel Sbeiti</a>.</small></i>
-      </div>
-    </div>
-
-    <div class="modal-overlay"></div>
-    <div class="modal" id="combauc">
-      <div class="modal-header">
-        <h4>Online algorithms for combinatorial auctions</h4>
-        <div class="modal-close-container">
-          <a class="modal-close">[X]</a>
-        </div>
-      </div>
-      <p>
-        In online combinatorial auctions, <i>m</i> objects are assignable to <i>n</i> agents who arrive
-        sequentially, in an adversarial order. Each agent has a valuation for each possible bundle of
-        objects. The aim is to distribute these objects on the fly to maximize global welfare. Are there
-        prices that guarantee 2/3 of the offline optimum? I obtained partial results on this challenging
-        open problem for a small number of items and in the simplified context of max-min greedy matching.
-      </p>
-      <div class="background-image combauc-bg"></div>
-    </div>
-    <div class="modal" id="tsvm">
-      <div class="modal-header">
-        <h4>Tropical support vector machines</h4>
-        <div class="modal-close-container">
-          <a class="modal-close">[X]</a>
-        </div>
-      </div>
-      <p>
-        We developed max-margin SVMs with efficient training and inference, based on tropical geometry
-        and mean payoff games, with theoretical guarantees for margin optimality, all-vs-all
-        multi-class classification, and the ability to perform general piecewise linear classification.
-        <a href="https://github.com/samuelbx/tropical-svm" target="_blank">[repo]</a>
-      </p>
-      <div class="image-container">
-        <div class="background-image tsvm-bg1"></div>
-        <div class="background-image tsvm-bg2"></div>
-        <div class="background-image tsvm-bg3"></div>
-      </div>
-    </div>
-    <div class="modal" id="exotec">
-      <div class="modal-header">
-        <h4>High-speed driving for robots</h4>
-        <div class="modal-close-container">
-          <a class="modal-close">[X]</a>
-        </div>
-      </div>
-      <p>
-        I designed, tested, and deployed an efficient
-        <a href="https://en.wikipedia.org/wiki/Model_predictive_control" target="_blank">model predictive controller</a>
-        for the
-        <a href="https://www.exotec.com/system/automated-warehouse-robots/" target="_blank">Skypod robot</a>, enabling it to
-        intelligently anticipate its trajectories and learn about its environment's imperfections.
-        Using its physical model, the robot is now able to calculate where a series of commands will take it,
-        and choose the optimal trajectory in the long run. Thanks to my controller, we were able to safely
-        double the robots' maximum speed to 4 m/s, enabling them to carry out far more orders for hundreds of
-        customers in industry, healthcare, retail...
-      </p>
-      <div class="background-image exotec-bg"></div>
-    </div>
-    <div class="modal" id="psc">
-      <div class="modal-header">
-        <h4>Simulating population dynamics</h4>
-        <div class="modal-close-container">
-          <a class="modal-close">[X]</a>
-        </div>
-      </div>
-      <p>
-        We studied the dynamics of two rival species and observed that the cross-diffusion term
-        in the <a href="https://pubmed.ncbi.nlm.nih.gov/513804/" target="_blank">SKT</a> model induced
-        spatial segregation at equilibrium. To this end, we developed a fast solver of the underlying
-        non-linear differential equations. We then showed that this continuous model was the limit
-        of a Markovian random process, which we also simulated.
-        <a href="https://github.com/samuelbx/pyspecies" target="_blank">[repo]</a>
-        <a href="https://pypi.org/project/PySpecies/" target="_blank">[pypi]</a>
-      </p>
-      <div class="video-container">
-        <video src="fig/skt.webm" autoplay loop muted playsinline></video>
+        
+        <footer>
+          <small>Friends' pages: <a href="https://tessbreton.github.io/" target="_blank">Tess Breton</a>, <a href="https://boscodaligny.fr/" target="_blank">Bosco d'Aligny</a>, <a href="https://mathias-grau.github.io" target="_blank">Mathias Grau</a>, <a href="">Daniel Sbeiti</a>.</small>
+        </footer>
       </div>
     </div>
   </body>

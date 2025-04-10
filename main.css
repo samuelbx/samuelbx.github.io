@@ -6,268 +6,95 @@ body {
     padding: 0;
 }
 
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+a {
+    color: #000;
+    text-decoration: underline;
+}
+
+a:hover {
+    background-color: #ffffcc;
+}
+
+section {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
 .profile-pic {
-    width: 128px;
-    height: 128px;
+    width: 120px;
+    height: 120px;
     float: right;
-    margin: 0 0 10px 10px;
+    margin: 0 0 10px 15px;
     background-image: url('pp.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 50%;
 }
 
-hr {
-    border-color: #fff;
-}
-
-h4 {
+.gallery {
     display: flex;
-    justify-content: space-between;
+    gap: 15px;
+    margin: 15px 0;
 }
 
-a {
-    text-decoration: underline;
-    color: #000;
+.gallery-item {
+    flex: 1;
 }
 
-a:hover {
-    color: #000;
-    background-color: #ffffcc;
+/* Replace img elements with background divs */
+.tsvm-image {
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%;
+    border-radius: 4px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+.tsvm-moons {
+    background-image: url('fig/tsvm1.png');
 }
 
-.container {
-    margin: 0 auto;
-    width: 800px;
-    padding: 20px;
+.tsvm-blobs {
+    background-image: url('fig/tsvm2.png');
 }
 
-.content-container {
-    margin-bottom: 4rem;
-}
-
-.header {
-    margin-bottom: 0;
-    display: block;
-}
-
-.header-title {
-    font-size: 2rem;
-    text-decoration: none;
+figcaption {
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 8px;
 }
 
 ul {
-    padding-left: 1em;
+    padding-left: 1.5em;
 }
 
-.item h2,
-.item h4 {
-    margin-bottom: 0;
-}
-
-.item {
-    margin-bottom: 1em;
-}
-
-.toggle-tooltip {
-    color: blue;
-    font-weight: normal;
-}
-
-.tooltip-content {
-    overflow: hidden;
-    max-height: 0;
-    border: 2px solid #ddd;
-    border-radius: 6px;
-    margin-top: 10px;
-    opacity: 1;
-    padding: 15px;
-    transition: all 0.4s ease;
-}
-
-.tooltip-content.collapsed {
-    opacity: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-top: 0;
-}
-
-.tooltip-content:not(.collapsed) {
-    max-height: 1000px;
-    opacity: 1;
-}
-
-.image-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.image-container img {
-    flex: 1;
-    max-width: 30%;
-}
-
-body.modal-open {
-    overflow: hidden;
-}
-
-.modal-overlay {
-    position: fixed;
-    z-index: 9998;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.4s ease;
-}
-
-.modal-overlay.active {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.modal {
-    position: fixed;
-    z-index: 9999;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(0.8);
-    width: 90vw;
-    max-width: 700px;
-    max-height: 80vh;
-    overflow-y: auto;
-    background: #fff;
-    border: 2px solid #ddd;
-    border-radius: 6px;
-    opacity: 0;
-    pointer-events: none;
-    padding: 20px;
-    box-sizing: border-box;
-    transition: all 0.4s ease;
-}
-
-.modal.active {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.modal-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-.modal-close-container {
-    display: flex;
-    align-items: center;
-}
-
-.modal-close {
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.background-image {
-    width: 100%;
-    padding-bottom: 56.25%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    margin: 1rem 0;
-}
-
-.combauc-bg {
-    background-image: url('fig/combauc.jpeg');
-}
-
-.tsvm-bg1 {
-    background-image: url('fig/tropical1.svg');
-}
-
-.tsvm-bg2 {
-    background-image: url('fig/tropical2.svg');
-}
-
-.tsvm-bg3 {
-    background-image: url('fig/tropical3.svg');
-}
-
-.exotec-bg {
-    background-image: url('fig/skypod.jpg');
-}
-
-.video-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    margin: 1rem 0;
-}
-
-.video-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* --- MEDIA QUERIES --- */
-
-@media (max-width: 800px) {
-    .container {
-        width: 90vw;
-    }
+footer {
+    margin-top: 2rem;
+    text-align: center;
 }
 
 @media (max-width: 600px) {
-    .profile-pic {
-        width: 25%;
-        height: auto;
-        display: block;
-        margin: 0 auto 10px auto;
-    }
-
-    .image-container {
-        align-items: center;
-    }
-
-    .image-container img {
-        max-width: 80%;
-        margin-bottom: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        font-size: 14px;
-        line-height: 1.5rem;
-    }
-
     .container {
-        width: 95vw;
-        padding: 10px;
+        padding: 15px;
     }
 
-    h1 {
-        font-size: 1.25rem;
+    .profile-pic {
+        display: none;
     }
-}
 
-@media (min-width: 768px) {
-    .image-container {
-        flex-direction: row;
+    .gallery {
+        flex-direction: column;
+    }
+
+    .tsvm-blobs {
+        display: none;
     }
 }
